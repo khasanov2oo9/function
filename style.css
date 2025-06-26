@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #d8c4aa;
+  color: #000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  margin-top: 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+.Btn {
+  display: flex;
+  gap: 10px;
+  width: 132px;
+  height: 42px;
+  border-radius: 6px;
+}
+
+.Btn button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.light-btn {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+h1 {
+    font-size: 46px;
+    margin: 20px 0;
+}
+
+.dark-btn {
+  background-color: #111;
+  color: #fff;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 30px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.details-btn {
+  background-color: orange;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.img img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .img {
+    max-width: 100%;
+  }
+
+  .img img {
+    width: 100%;
+  }
+}
